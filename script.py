@@ -5,47 +5,17 @@ import concurrent.futures
 import time
 
 image_urls = [
-    "https://www.moctale.in/media/PC/PC1.jpg",
-    "https://www.moctale.in/media/PC/PC2.jpg",
-    "https://www.moctale.in/media/PC/PC3.jpg",
-    "https://www.moctale.in/media/PC/PC4.jpg",
-    "https://www.moctale.in/media/PC/PC5.jpg",
-    "https://www.moctale.in/media/PC/PC6.jpg",
-    "https://www.moctale.in/media/PC/PC7.jpg",
-    "https://www.moctale.in/media/PC/PC8.jpg",
-    "https://www.moctale.in/media/PC/PC9.jpg",
-    "https://www.moctale.in/media/PC/PC10.jpg",
-    "https://www.moctale.in/media/PC/PC11.jpg",
-    "https://www.moctale.in/media/PC/PC12.jpg",
-    "https://www.moctale.in/media/PC/PC13.jpg",
-    "https://www.moctale.in/media/PC/PC14.jpg",
-    "https://www.moctale.in/media/PC/PC15.jpg",
-    "https://www.moctale.in/media/PC/PC16.jpg",
-    "https://www.moctale.in/media/PC/PC17.jpg",
-    "https://www.moctale.in/media/PC/PC18.jpg",
-    "https://www.moctale.in/media/PC/PC19.jpg",
-    "https://www.moctale.in/media/PC/PC20.jpg",
-    "https://www.moctale.in/media/PC/PC21.jpg",
-    "https://www.moctale.in/media/PC/PC22.jpg",
-    "https://www.moctale.in/media/PC/PC23.jpg",
-    "https://www.moctale.in/media/PC/PC24.jpg",
-    "https://www.moctale.in/media/PC/PC25.jpg",
-    "https://www.moctale.in/media/PC/PC26.jpg",
-    "https://www.moctale.in/media/PC/PC27.jpg",
-    "https://www.moctale.in/media/PC/PC28.jpg",
-    "https://www.moctale.in/media/PC/PC29.jpg",
-    "https://www.moctale.in/media/PC/PC30.jpg",
     "https://www.moctale.in/media/screen-recordings/1.mp4",
     "https://www.moctale.in/media/screen-recordings/2.mp4",
     "https://www.moctale.in/media/screen-recordings/3.mp4",
     "https://www.moctale.in/media/screen-recordings/4.mp4",
-    "https://www.moctale.in/manifest.json",
-    "https://www.moctale.in/media/PC/ComicVerse.jpg",
-    "https://www.moctale.in/media/PC/BnFTV.jpg",
-    "https://www.moctale.in/media/PC/PJExplained.jpg",
     "https://www.moctale.in/login?_rsc=p37cr",
     "https://www.moctale.in/signup?_rsc=1r34m",
     "https://www.moctale.in/signup?_rsc=p37cr",
+    "https://www.moctale.in/media/screen-recordings/1.mp4",
+    "https://www.moctale.in/media/screen-recordings/2.mp4",
+    "https://www.moctale.in/media/screen-recordings/3.mp4",
+    "https://www.moctale.in/media/screen-recordings/4.mp4"
 ]
 headers = {
     "Host": "www.moctale.in",
@@ -91,6 +61,5 @@ def run_multithreaded_check():
 
 if __name__ == "__main__":
     run_multithreaded_check()
-
 
 
